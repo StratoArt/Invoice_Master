@@ -28,3 +28,24 @@ Upload seluruh isi folder ke GitHub Pages, termasuk `assets/StratoArtStudio.svg`
 - Icon PWA: `icons/icon-192.png`, `icons/icon-512.png`
 - Form invoice sekarang membaca master `PRODUCT`: pilih produk dari database, harga jual otomatis terisi, dan `productId` ikut disimpan untuk perhitungan HPP/margin.
 - Deploy frontend melalui HTTPS (misalnya GitHub Pages) agar fitur install PWA aktif.
+
+## V4 — Responsive Mobile App UI
+
+Versi ini mempertahankan layout desktop Business Manager dan menambahkan layout mobile khusus untuk Android/PWA.
+
+### Desktop
+- Sidebar dan topbar tetap seperti Business Manager desktop.
+- Tabel, form, POS dan modal tetap menggunakan layout lebar.
+
+### Mobile / Android
+- Bottom navigation: Home, POS, Invoice, Stok, Lainnya.
+- Dashboard berubah menjadi card-based mobile layout.
+- KPI menjadi touch-friendly cards.
+- POS memakai grid produk 2 kolom dan checkout yang lebih mudah dijangkau.
+- Data table berubah menjadi list/card agar tidak perlu horizontal scrolling.
+- Modal form menjadi bottom sheet/full-width.
+- Menu Lainnya berisi Produk, Customer, Pembayaran, Pembelian dan Laporan.
+- Ikon aplikasi menggunakan logo Strato Art Studio.
+- PWA tetap menggunakan `manifest.webmanifest` dan `sw.js`.
+
+Backend, Google Sheets dan Apps Script tidak diubah oleh layout responsive ini.

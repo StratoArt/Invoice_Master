@@ -1,5 +1,5 @@
 const CACHE = 'business-manager-v5';
-const CORE = ['./','./index.html','./css/style.css','./js/app.js','./manifest.webmanifest','./icons/swa-mark-192.png','./icons/swa-mark-512.png'];
+const CORE = ['./','./index.html','./css/style.css','./js/app.js','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
